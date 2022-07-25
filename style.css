@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    background-color:  hsl(217, 54%, 11%);
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    width: 275px;
+    padding: 1.5rem;
+}
+.image {
+    position: relative;
+}
+.image div {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+}
+.image div:hover {
+    opacity: 1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.image div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+h3 {
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+.description {
+    margin: 0.6rem 0 1rem 0;
+    color: hsl(215, 51%, 70%);
+    line-height: 28px;
+    font-weight: 300;
+}
+.price-days {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+ .price {
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    letter-spacing: 1px;
+ }
+ .price img {
+    margin-right: 5px;
+ }
+ .days {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+ }
+ .days img {
+    margin-right: 5px;
+ }
+.creator {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+.avatar {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-right: 1rem;
+    width: 30px;
+}
+span {
+    color: #fff;
+    margin-left: 5px;;
+}
+.mainImg, h3, span {
+    cursor: pointer;
+}
+
+h3:hover,
+span:hover {
+   color: hsl(178, 100%, 50%);
+} 
